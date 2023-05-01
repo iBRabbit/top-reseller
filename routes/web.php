@@ -26,7 +26,6 @@ Route::get('/', function () {
 });
 
 Route::get('/brands', [BrandController::class, 'index']);
-Route::get('/brands/{brand:brand_name}', [BrandController::class, 'show']);
+Route::get('/brands/{brand:id}', [BrandController::class, 'show']);
 Route::get('/categories/{category:category_name}', [CategoryController::class, 'show']);
-
 Route::get('/item/{item:id}', [ItemController::class, 'show']);
