@@ -21,13 +21,13 @@ class DatabaseSeeder extends Seeder
         Brand::create([
             'brand_name' => 'Hosh Mosh',
             'top5_flag' => true,
-            'description' => 'Hosh Mosh is a brand that sells clothes'
+            'description' => "Hosh Mosh was founded in 2023 exclusively only for Binus Mid Term Even Semester Purposes."
         ]);
 
         Brand::create([
             'brand_name' => 'Maximal',
             'top5_flag' => true,
-            'description' => 'Maximal is a brand that sells clothes'
+            'description' => 'Maximal was founded in 2023 exclusively only for Binus Mid Term Even Semester Purposes.'
         ]);
 
         Brand::create([
@@ -39,13 +39,19 @@ class DatabaseSeeder extends Seeder
         Brand::create([
             'brand_name' => 'Adadah',
             'top5_flag' => true,
-            'description' => 'Adadah is a brand that sells clothes'
+            'description' => 'Adadah was founded in 2023 exclusively only for Binus Mid Term Even Semester Purposes.'
         ]);
 
         Brand::create([
             'brand_name' => 'Hawee',
             'top5_flag' => true,
-            'description' => 'Hawee is a brand that sells clothes'
+            'description' => 'Hawee was founded in 2023 exclusively only for Binus Mid Term Even Semester Purposes.'
+        ]);
+
+        Brand::create([
+            'brand_name' => 'Hush Dog',
+            'top5_flag' => false,
+            'description' => 'Hush Dog was founded in 2023 exclusively only for Binus Mid Term Even Semester Purposes.'
         ]);
 
         Category::create([
@@ -65,93 +71,69 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Item::create([
-            'item_name' => 'Hosh Mosh Shirt',
+            'item_name' => 'Blue Shirt',
             'brand_id' => 1,
             'category_id' => 1,
             'price' => 100000,
-            'description' => 'Skirt'
+            'description' => 'Blue shirt Hosh Mosh Shirt is  shirt'
         ]);
 
         Item::create([
-            'item_name' => 'Maximal Shirt',
-            'brand_id' => 2,
-            'category_id' => 1,
-            'price' => 100000,
-            'description' => 'Shirt'
-        ]);
-
-        Item::create([
-            'item_name' => 'Pulu Shirt',
-            'brand_id' => 3,
-            'category_id' => 1,
-            'price' => 100000,
-            'description' => 'Skrit'
-        ]);
-
-        Item::create([
-            'item_name' => 'Adadah Shirt',
-            'brand_id' => 4,
-            'category_id' => 1,
-            'price' => 100000,
-            'description' => 'As'
-        ]);
-
-        Item::create([
-            'item_name' => 'Hawee Shirt',
-            'brand_id' => 5,
-            'category_id' => 1,
-            'price' => 100000,
-            'description' => 'Hsasd'
-        ]);
-
-        Item::create([
-            'item_name' => 'Hosh Mosh Bag',
+            'item_name' => 'Kids Overall',
             'brand_id' => 1,
-            'category_id' => 2,
-            'price' => 100000,
-            'description' => 'Hosad'
+            'category_id' => 1,
+            'price' => 150000,
+            'description' => 'Kids Overall Hosh Mosh Shirt is the best imported dress'
         ]);
 
         Item::create([
-            'item_name' => 'Maximal Bag',
-            'brand_id' => 2,
-            'category_id' => 2,
-            'price' => 100000,
-            'description' => 'Maximal Bag '
-        ]);
-
-        Item::create([
-            'item_name' => 'Pulu Bag',
-            'brand_id' => 3,
-            'category_id' => 2,
-            'price' => 100000,
-            'description' => 'Pulu Bag is s'
-        ]);
-
-        Item::create([
-            'item_name' => 'Adadah Bag',
-            'brand_id' => 4,
-            'category_id' => 2,
-            'price' => 100000,
-            'description' => 'Adadah Bag is '
-        ]);
-
-        Item::create([
-            'item_name' => 'Hawee Bag',
-            'brand_id' => 5,
-            'category_id' => 2,
-            'price' => 100000,
-            'description' => 'Hawee Bag is s'
-        ]);
-
-        Item::create([
-            'item_name' => 'Hosh Mosh Shoes',
+            'item_name' => 'Baby Shoes',
             'brand_id' => 1,
             'category_id' => 3,
             'price' => 100000,
-            'description' => 'Hosh Mosh s'
+            'description' => 'Baby Shoes Hosh Mosh Shoes is the best imported shirt'
         ]);
 
+        Item::create([
+            'item_name' => 'Green Shirt',
+            'brand_id' => 3,
+            'category_id' => 1,
+            'price' => 200000,
+            'description' => 'Green Shirt Pulu Dress is the best imported shirt'
+        ]);
+
+        Item::create([
+            'item_name' => 'Flower Shirt',
+            'brand_id' => 5,
+            'category_id' => 1,
+            'price' => 300000,
+            'description' => 'Flower Shirt Pulu Shirt is the best imported Shirt'
+        ]);
+
+        Item::create([
+            'item_name' => 'Tote Bag',
+            'brand_id' => 6,
+            'category_id' => 2,
+            'price' => 400000,
+            'description' => 'Tote Bag dog bag is the best imported bag'
+        ]);
+        
+        Item::create([
+            'item_name' => 'Red Dress',
+            'brand_id' => 2,
+            'category_id' => 4,
+            'price' => 500000,
+            'description' => 'Red Dress dog bag is the best imported dress'
+        ]);
+
+        Item::create([
+            'item_name' => 'Running Shoes',
+            'brand_id' => 4,
+            'category_id' => 3,
+            'price' => 600000,
+            'description' => 'Running Shoes his the best imported dress'
+        ]);
+        
 
     }
 }

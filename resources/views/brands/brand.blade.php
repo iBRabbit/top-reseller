@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $item->item_name }}</h5>
                         <p class="card-text">{{ $item->brand->brand_name}}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">Detail</a>
                     </div>
                 </div>
             @endforeach

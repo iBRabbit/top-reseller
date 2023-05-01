@@ -25,10 +25,10 @@
                             </a>
                             <ul class="dropdown-menu active" style="background-color: yellow">
                                 
-                                <li><a class="dropdown-item" href="#">Shirt</a></li>
-                                <li><a class="dropdown-item" href="#">Bag</a></li>
-                                <li><a class="dropdown-item" href="#">Shoes</a></li>
-                                <li><a class="dropdown-item" href="#">Dress</a></li>
+                                <li><a class="dropdown-item" href="/categories/shirt">Shirt</a></li>
+                                <li><a class="dropdown-item" href="/categories/bag">Bag</a></li>
+                                <li><a class="dropdown-item" href="/categories/shoes">Shoes</a></li>
+                                <li><a class="dropdown-item" href="/categories/dress">Dress</a></li>
                                 
                             </ul>
                         </li>

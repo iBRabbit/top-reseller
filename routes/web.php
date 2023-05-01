@@ -2,7 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BrandController;
-
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ItemController;
+use App\Models\Brand;
+use App\Models\Item;
+use App\Models\Category;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +20,13 @@ use App\Http\Controllers\BrandController;
 
 Route::get('/', function () {
     return view('home', [
-        'title' => 'Home'
+        'title' => 'Home',
+        'items' => Item::all()
     ]);
 });
 
 Route::get('/brands', [BrandController::class, 'index']);
 Route::get('/brands/{brand:brand_name}', [BrandController::class, 'show']);
+Route::get('/categories/{category:category_name}', [CategoryController::class, 'show']);
+
+Route::get('/item/{item:id}', [ItemController::class, 'show']);

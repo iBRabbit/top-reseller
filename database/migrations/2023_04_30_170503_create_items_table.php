@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignId('category_id')->references('id')->on('categories')->onUpdate('cascade')->onDelete('cascade');
             $table->string('item_name', 25)->nullable(false);
             $table->integer('price')->nullable(false);
-            $table->string('description', 25)->nullable(false);
+            $table->string('description', 100)->nullable(false);
         });
     }
 
