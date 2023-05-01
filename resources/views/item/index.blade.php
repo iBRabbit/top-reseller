@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="item-container d-flex flex-row">
+    <div class="item-container d-flex flex-row mt-4">
         <div class="item-left-container" style="width:30%">
             <img src="https://www.pollock.com/wp-content/uploads/2019/10/shopping-bags-500x500-300x250.png" alt="">
         </div>
