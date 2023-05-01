@@ -15,11 +15,11 @@ class Item extends Model
 
     public function brand()
     {
-        return $this->belongsTo(Brand::class);
+        return $this->hasOne(Brand::class, 'id', 'brand_id');
     }
 
     public function category()
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasOne(Category::class, 'id', 'category_id'); 
     }
 }
