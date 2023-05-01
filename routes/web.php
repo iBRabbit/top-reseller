@@ -21,3 +21,4 @@ Route::get('/', function () {
 });
 
 Route::get('/brands', [BrandController::class, 'index']);
+Route::get('/brands/{brand:brand_name}', [BrandController::class, 'show']);
