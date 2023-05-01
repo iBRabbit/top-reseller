@@ -25,6 +25,12 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/about', function () {
+    return view('about', [
+        'title' => 'About'
+    ]);
+});
+
 Route::get('/brands', [BrandController::class, 'index']);
 Route::get('/brands/{brand:id}', [BrandController::class, 'show']);
 Route::get('/categories/{category:category_name}', [CategoryController::class, 'show']);
