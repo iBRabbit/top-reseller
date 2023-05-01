@@ -8,9 +8,7 @@
                     width="100%">
             </div>
         </div>
-        
-        {{-- TODO: Bikin jadi template sendiri. --}}
-
+    
         <div class="product-category mt-5" >
             <h3 class= "p-2" style="background-color: orange; width:50%">All Items</h3>
         </div>
