@@ -9,6 +9,8 @@
 
         <div class="right-brand-info " style="width:60%">
             <h1>{{ $brand->brand_name }}</h1>
+            <p>Address : Palmerah - Indonesia </p>
+            <p>Email : {{ strtolower($brand->brand_name) . "@binus.ac.id"}}</p>
             <p>{{ $brand->description }}</p>
 
         </div>

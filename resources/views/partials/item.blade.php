@@ -6,7 +6,21 @@
             @foreach ($chunk as $item)
                 <div class="product-row-container d-flex flex-column m-2">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://www.pollock.com/wp-content/uploads/2019/10/shopping-bags-500x500-300x250.png" class="card-img-top" alt="...">
+
+                        @if ($item->category->category_name == 'Bag')
+                            <img src="https://i.pinimg.com/originals/8a/3c/7f/8a3c7fbd4d9532a244ef3d5027d6e4c6.jpg" class="card-img-top m-3" alt="..." style="width:15vw; height:30vh">
+                        
+                        @elseif ($item->category->category_name == 'Shirt')
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/clothes-and-accessories/men-t-shirt-icon.png" alt="" class="card-img-top m-3" style="width:15vw; height:30vh">
+
+                        @elseif ($item->category->category_name == 'Shoes')
+                            <img src="https://cdn-icons-png.flaticon.com/512/5499/5499206.png" alt="" class="card-img-top m-3" style="width:15vw; height:30vh">
+
+                        @elseif ($item->category->category_name == 'Dress')
+                            <img src="https://cdn-icons-png.flaticon.com/512/1059/1059053.png" alt="" class="card-img-top m-3" style="width:15vw; height:30vh">
+
+                        @endif
+
                         <div class="card-body">
                             <h5 class="card-title">{{ $item->item_name }}</h5>
                             <p class="card-text" style="color:orange">{{ $item->brand->brand_name}}</p> 
