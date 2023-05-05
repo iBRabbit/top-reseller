@@ -1,4 +1,3 @@
-
 <div class="product-container mt-5">
     @foreach ($items->chunk(4) as $chunk)
         <div class="product-row-container d-flex flex-row m-2">
